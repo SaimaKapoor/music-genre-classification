@@ -1,14 +1,30 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
 # Virtual environment
 venv/
 .venv/
+env/
+ENV/
 
-# Dataset
+# Dataset / raw audio
 data/genres_original/
+data/raw/*
+!data/raw/README.md
 data/*.zip
+*.au
+*.wav
+*.mp3
+*.flac
+
+# Generated / processed data
+data/processed/*
+!data/processed/README.md
+handcrafted_output/
+handcrafted_features.csv
 
 # Jupyter
 .ipynb_checkpoints/
@@ -18,6 +34,8 @@ models/*.h5
 models/*.keras
 models/*.pth
 models/*.pt
+models/*.pkl
+models/*.joblib
 
 # Generated results
 results/figures/
@@ -25,3 +43,8 @@ results/tables/
 
 # Environment
 .env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
